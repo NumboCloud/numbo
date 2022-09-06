@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="img/login.png" />
+    <title>Login | NUMBO</title>
+    <style>
+       #form{
+        background-color: #ffd954;
+        width: 500px;
+        height: 500px;
+        font-family: 'Poppins';
+        margin-left: 700px;
+        margin-top: 100px;
+        border-radius: 15px;
+       }
+       body{
+        background-color: white;
+    }
+       h1{
+        font-size: 50px;
+        margin-top: 20px;
+        text-align: center;
+       }
+       #box1{
+        margin-left: 40px;
+        margin-right: 70px;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        font-size: larger;
+        color: rgba(0, 0, 0, 0.158);
+        padding-left: 15px;
+       }
+       #box2{
+        margin-left: 40px;
+        margin-right: 70px;
+        margin-top: 25px;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        font-size: larger;
+        color: rgba(0, 0, 0, 0.158);
+        padding-left: 15px;
+       }
+       #box1:hover, #box2:hover{
+        color: rgb(165, 165, 165);
+       }
+       .btns{
+        margin-top: 60px;
+        margin-left: 30px;
+       }
+       #submit, #limpar{
+        width: 40%;
+        height: 60px;
+        border-radius: 15px;
+        border: none;
+        background-color: #ff6582;
+        margin: 15px;
+        font-size: 20px;
+        color: #fff;
+
+       }
+       #submit:hover{
+        letter-spacing: 2px;
+        padding: 10px;
+       }
+       #limpar:hover{
+        letter-spacing: 2px;
+        padding: 10px;}
+       hr{
+        margin-left: 550px;
+        background-color: #fff;
+        width: 3px;
+        height: 500px;
+        margin-top: -500px;
+        border-radius: 45px;
+       }
+       .fundo{
+        margin-top: -445px;
+        margin-left: -100px;
+       }
+       .ver{
+            color: #ff6582;
+    }   
+        #login-btn{
+            background-color: #ffd954;
+            color: #241f25;
+    }
+         #cad-btn{
+            background-color: #ff6582;
+            color: #241f25;
+            border: 2px solid #ff6582;
+    }
+
+        .quad{
+            border: 2px solid #ffd954;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #ffd954;
+            color: #241f25;
+            text-align: center;
+            margin-right: 220px;
+        }
+       
+    </style>
+</head>
+<body><header>
+    <div id="title">
+        <img src="img/numbopreta.png" width="250px" >
+    </div>
+
+    <ul>
+        <a id="nav" href="index.html"><li>Início</li></a>
+        <a id="nav" href="service.html"><li>Serviços</li></a>
+        <a id="nav" href="sobre.html"><li>Sobre</li></a>
+        <a id="nav" href="ctt.html"><li>Contato</li></a>
+        <a href="formulario.php" id="cad-btn"><li>Cadastre-se</li></a>
+    </ul>
+</header>
+    <div id="form">
+        <h1>Login</h1><br><br>
+        
+        <form action="testLogin.php" method="POST">
+            
+               <input id="box1" type="text" name="email" placeholder="Email">
+               <br><br>
+               <input id="box2" type="password" name="senha" placeholder="Senha">
+               <br><br>
+               <div class="btns">
+                    <input id="limpar" type="reset" name="reset" value="Limpar">
+                    <input id="submit" type="submit" name="submit" value="Enviar">
+               </div>
+            
+        </form>
+        
+            
+    </div><hr>
+    <div class="fundo">
+            <img src= "img/imagem18.svg" width="40%" height="40%">
+        </div>
+    
+
+</body>
